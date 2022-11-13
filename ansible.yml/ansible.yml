@@ -11,3 +11,8 @@
        service:
         name: the httpd
         status: restarted
+    - name: The installation
+       yum:
+        name: the httpd
+        status: latest
+  
