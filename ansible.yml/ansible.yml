@@ -1,0 +1,13 @@
+---
+ - name: The HTTPD
+   hosts: all
+   become: true
+   tasks:
+    - name: The installation
+       yum:
+        name: the httpd 
+        status: latest
+    - name: The services
+       service:
+        name: the httpd
+        status: restarted
